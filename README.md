@@ -22,7 +22,13 @@ Mac and Windows people can write to each other.
 3. The first time, macOS may say it can't verify the app (it isn't from the App Store). Click **Done**, then go to
    **System Settings → Privacy & Security**, scroll down and click **Open Anyway** next to Aerogram. You only do this once.
 
-A ✈ appears in your menu bar. Click it and everything is in one panel.
+A ✈ appears in your menu bar. Click it and everything is in one panel. At the bottom of the panel you can see which version you have (this one is **v0.2.2**).
+
+If macOS still refuses to open it, run this once in Terminal, then open Aerogram again:
+
+```
+xattr -dr com.apple.quarantine /Applications/Aerogram.app
+```
 
 ## Install on Windows
 
@@ -52,7 +58,9 @@ Add as many people as you like. Every letter goes to **one** person: there are n
 
 If they're offline, the letter waits and arrives the moment they're back. A green dot beside someone's name means Aerogram is open on their Mac right now.
 
-## What's new in 0.2.1
+## What's new in 0.2.2
+
+(0.2.1 was withdrawn: its Mac installer still held the old code. 0.2.2 is the same release, built correctly.)
 
 - **Windows.** Aerogram now runs on Windows too, with the same planes, balls and panel.
 - **Photos.** Tape up to 3 photos onto a letter, from your library or the camera. They're printed photos with tape, not a picture in a feed: you drag them where you like, they slip inside when the letter folds, and land on the page when it's opened.
@@ -63,7 +71,7 @@ If they're offline, the letter waits and arrives the moment they're back. A gree
 - **Updates install inside the app.** Click the update banner and Aerogram swaps itself and reopens.
 - **Fixes.** No more stuck "JWT expired" screen after being away, and no blank Settings window (Mac).
 
-Everyone on 0.2 can read the text of a letter with photos, but only 0.2.1 shows the photos. Install 0.2.1 once by hand; after that, updates install themselves.
+Everyone on 0.2 can read the text of a letter with photos, but only 0.2.2 shows the photos. Install 0.2.2 once by hand; after that, updates install themselves.
 
 ## What was new in 0.2
 
